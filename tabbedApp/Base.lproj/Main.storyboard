@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Equipa-->
+        <!--Horário-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                             <constraint firstItem="UM5-td-mMD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="ead-uG-SX5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Equipa" image="team" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Horário" image="calendario" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="webview" destination="UM5-td-mMD" id="mKs-aO-SJg"/>
                     </connections>
@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Parceiros-->
+        <!--Cursos-->
         <scene sceneID="HlP-k3-0Hu">
             <objects>
                 <viewController id="lA9-at-yy1" customClass="Parceiros" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                             <constraint firstItem="a47-wv-1tS" firstAttribute="leading" secondItem="kXk-uK-Eor" secondAttribute="leading" id="gis-oE-Qy4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Parceiros" image="partner" id="fnp-fN-3of"/>
+                    <tabBarItem key="tabBarItem" title="Cursos" image="diplona" id="fnp-fN-3of"/>
                     <connections>
                         <outlet property="webview" destination="a47-wv-1tS" id="KyP-Zd-Dd7"/>
                     </connections>
@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-2512"/>
         </scene>
-        <!--Cartão-->
+        <!--Razões-->
         <scene sceneID="Xho-qV-7wy">
             <objects>
                 <viewController id="rId-iF-u1t" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cartão" image="cartao" id="xO6-t2-1Ta"/>
+                    <tabBarItem key="tabBarItem" title="Razões" image="choice" id="xO6-t2-1Ta"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgh-cd-XmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,7 +120,7 @@
                             <constraint firstItem="LgK-Xn-qpG" firstAttribute="top" secondItem="H97-ui-fx7" secondAttribute="bottom" id="jIE-Wu-k0Z"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mapa" image="nucleos" id="CeW-S8-rbz" userLabel="Mapa"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="mapa" id="CeW-S8-rbz" userLabel="Mapa"/>
                     <connections>
                         <outlet property="map" destination="H97-ui-fx7" id="vcg-iW-LJ1"/>
                     </connections>
@@ -193,10 +193,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cartao" width="18.75" height="18.75"/>
+        <image name="calendario" width="18.75" height="18.75"/>
+        <image name="choice" width="18.75" height="18.75"/>
+        <image name="diplona" width="18.75" height="18.75"/>
         <image name="info" width="18.75" height="18.75"/>
-        <image name="nucleos" width="18.75" height="18.75"/>
-        <image name="partner" width="18.75" height="18.75"/>
-        <image name="team" width="18.75" height="18.75"/>
+        <image name="mapa" width="18.75" height="18.75"/>
     </resources>
 </document>
