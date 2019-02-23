@@ -80,7 +80,7 @@
         <!--Razões-->
         <scene sceneID="Xho-qV-7wy">
             <objects>
-                <viewController id="rId-iF-u1t" sceneMemberID="viewController">
+                <viewController id="rId-iF-u1t" customClass="Razoes" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BuO-8V-cu4"/>
                         <viewControllerLayoutGuide type="bottom" id="3hz-Zg-WO7"/>
@@ -88,9 +88,24 @@
                     <view key="view" contentMode="scaleToFill" id="ym7-yp-Wgu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bx-Kc-N8W">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Bx-Kc-N8W" secondAttribute="trailing" id="BWn-bM-dRv"/>
+                            <constraint firstItem="3hz-Zg-WO7" firstAttribute="top" secondItem="6Bx-Kc-N8W" secondAttribute="bottom" id="Xrt-L4-yiA"/>
+                            <constraint firstItem="6Bx-Kc-N8W" firstAttribute="leading" secondItem="ym7-yp-Wgu" secondAttribute="leading" id="ao3-ST-8Bs"/>
+                            <constraint firstItem="6Bx-Kc-N8W" firstAttribute="top" secondItem="BuO-8V-cu4" secondAttribute="bottom" id="rYo-hs-Jov"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Razões" image="choice" id="xO6-t2-1Ta"/>
+                    <connections>
+                        <outlet property="webView" destination="6Bx-Kc-N8W" id="eer-GM-Bmm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgh-cd-XmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
