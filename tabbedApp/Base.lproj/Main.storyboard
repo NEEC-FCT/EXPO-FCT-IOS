@@ -46,7 +46,7 @@
         <!--Cursos-->
         <scene sceneID="HlP-k3-0Hu">
             <objects>
-                <viewController id="lA9-at-yy1" customClass="Parceiros" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lA9-at-yy1" customClass="Cursos" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q16-4L-wzK"/>
                         <viewControllerLayoutGuide type="bottom" id="NR1-Ln-t68"/>
@@ -70,7 +70,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Cursos" image="diplona" id="fnp-fN-3of"/>
                     <connections>
-                        <outlet property="webview" destination="a47-wv-1tS" id="KyP-Zd-Dd7"/>
+                        <outlet property="webview" destination="a47-wv-1tS" id="32J-mM-6hL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m95-Kx-A0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
