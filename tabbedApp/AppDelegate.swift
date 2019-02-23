@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  tabbedApp
 //
-//  Created by Sebastian Hette on 07.11.2016.
-//  Copyright © 2016 MAGNUMIUM. All rights reserved.
+//  Created by NEEC on 23/02/2019.
+//  Copyright © 2019 João Veloso. All rights reserved.
 //
 
 import UIKit

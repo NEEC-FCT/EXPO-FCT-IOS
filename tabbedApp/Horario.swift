@@ -3,8 +3,9 @@
 //  tabbedApp
 //
 //  Created by NEEC on 23/02/2019.
-//  Copyright © 2019 MAGNUMIUM. All rights reserved.
+//  Copyright © 2019 João Veloso. All rights reserved.
 //
+
 
 import Foundation
 import UIKit
