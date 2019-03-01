@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-class Cursos: UIViewController {
+class Cursos: UIViewController , UIWebViewDelegate {
     
 
     @IBOutlet weak var webview: UIWebView!
@@ -20,6 +20,7 @@ class Cursos: UIViewController {
         let url = URL (string: "https://expofct.neec-fct.com/cursos/")
         let requestObj = URLRequest(url: url!)
         webview.loadRequest(requestObj)
+        webview.delegate = self
         
       
         
@@ -28,6 +29,15 @@ class Cursos: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func webView(_: UIWebView, shouldStartLoadWith: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
+        if navigationType == UIWebView.NavigationType.linkClicked {
+            UIApplication.shared.open(shouldStartLoadWith.url!, options: [:], completionHandler: nil)
+            return false
+        }
+        return true
     }
     
     
