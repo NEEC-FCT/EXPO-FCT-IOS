@@ -11,6 +11,7 @@
 		9C5BBF402220C88F006CA71B /* Razoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF3F2220C88F006CA71B /* Razoes.swift */; };
 		9C5BBF422220C9EA006CA71B /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF412220C9EA006CA71B /* Horario.swift */; };
 		9C5BBF442220CC01006CA71B /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF432220CC01006CA71B /* Info.swift */; };
+		9C656E542233F0610040B41B /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C656E532233F0610040B41B /* tabBarController.swift */; };
 		9CFDE5B92200A146007BE4CB /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFDE5B82200A146007BE4CB /* Mapa.swift */; };
 		DECFA8E11DD0C96400ABF47D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFA8E01DD0C96400ABF47D /* AppDelegate.swift */; };
 		DECFA8E81DD0C96400ABF47D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECFA8E61DD0C96400ABF47D /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		9C5BBF3F2220C88F006CA71B /* Razoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Razoes.swift; sourceTree = "<group>"; };
 		9C5BBF412220C9EA006CA71B /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
 		9C5BBF432220CC01006CA71B /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		9C656E532233F0610040B41B /* tabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
 		9CFDE5B82200A146007BE4CB /* Mapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
 		DECFA8DD1DD0C96400ABF47D /* tabbedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabbedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECFA8E01DD0C96400ABF47D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				9C5BBF3F2220C88F006CA71B /* Razoes.swift */,
 				9C5BBF412220C9EA006CA71B /* Horario.swift */,
 				9C5BBF432220CC01006CA71B /* Info.swift */,
+				9C656E532233F0610040B41B /* tabBarController.swift */,
 			);
 			path = tabbedApp;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				9C5BBF3E2220C5DE006CA71B /* Cursos.swift in Sources */,
 				9C5BBF442220CC01006CA71B /* Info.swift in Sources */,
 				9CFDE5B92200A146007BE4CB /* Mapa.swift in Sources */,
+				9C656E542233F0610040B41B /* tabBarController.swift in Sources */,
 				9C5BBF422220C9EA006CA71B /* Horario.swift in Sources */,
 				9C5BBF402220C88F006CA71B /* Razoes.swift in Sources */,
 				DECFA8E11DD0C96400ABF47D /* AppDelegate.swift in Sources */,
