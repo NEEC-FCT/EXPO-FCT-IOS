@@ -8,21 +8,20 @@
 
 
 import UIKit
-import MapKit
 
-class Mapa: UIViewController {
+class tabBarController: UITabBarController {
     
     
-    @IBOutlet weak var webView: UIWebView!
+    var freshLaunch = true
+    override func viewWillAppear(_ animated: Bool) {
+        if freshLaunch == true {
+            freshLaunch = false
+            self.selectedIndex = 2 // 5th tab
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let url = URL (string: "https://www.google.com/maps/d/viewer?mid=1LC7hMeFmnZ8cj4XGiMAEBam7WHZZIn3k&ll=38.66073135349911%2C-9.205763350000097&z=17")
-        let requestObj = URLRequest(url: url!)
-        webView.loadRequest(requestObj)
-       // webView.delegate = self
-       
         
     }
     
