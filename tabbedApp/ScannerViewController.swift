@@ -14,6 +14,7 @@ class  ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
     var video = AVCaptureVideoPreviewLayer()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -45,6 +46,7 @@ class  ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         video.frame = view.layer.bounds
         view.layer.addSublayer(video)
         
+    
         
         session.startRunning()
     }
