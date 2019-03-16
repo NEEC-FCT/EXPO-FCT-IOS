@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B98B03BDFF7E69B0763A14B /* Pods_tabbedApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48FC6200B65968ECC6D0C01 /* Pods_tabbedApp.framework */; };
 		9C0781E6223C97A8005EBA65 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0781E5223C97A8005EBA65 /* ScannerViewController.swift */; };
+		9C0781E8223D42D9005EBA65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0781E7223D42D9005EBA65 /* GoogleService-Info.plist */; };
 		9C5BBF3E2220C5DE006CA71B /* Cursos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF3D2220C5DE006CA71B /* Cursos.swift */; };
 		9C5BBF402220C88F006CA71B /* Razoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF3F2220C88F006CA71B /* Razoes.swift */; };
 		9C5BBF422220C9EA006CA71B /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF412220C9EA006CA71B /* Horario.swift */; };
@@ -25,6 +26,7 @@
 		2A964BD918C7E4587B96F055 /* Pods-tabbedApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabbedApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-tabbedApp/Pods-tabbedApp.release.xcconfig"; sourceTree = "<group>"; };
 		85D2CBAF9C55F9F5BE260F06 /* Pods-tabbedApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabbedApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tabbedApp/Pods-tabbedApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9C0781E5223C97A8005EBA65 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		9C0781E7223D42D9005EBA65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C5BBF3D2220C5DE006CA71B /* Cursos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cursos.swift; sourceTree = "<group>"; };
 		9C5BBF3F2220C88F006CA71B /* Razoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Razoes.swift; sourceTree = "<group>"; };
 		9C5BBF412220C9EA006CA71B /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				DECFA8E61DD0C96400ABF47D /* Main.storyboard */,
 				DECFA8EB1DD0C96400ABF47D /* LaunchScreen.storyboard */,
 				DECFA8EE1DD0C96400ABF47D /* Info.plist */,
+				9C0781E7223D42D9005EBA65 /* GoogleService-Info.plist */,
 				9CFDE5B82200A146007BE4CB /* Mapa.swift */,
 				9C5BBF3D2220C5DE006CA71B /* Cursos.swift */,
 				9C5BBF3F2220C88F006CA71B /* Razoes.swift */,
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DECFA8ED1DD0C96400ABF47D /* LaunchScreen.storyboard in Resources */,
+				9C0781E8223D42D9005EBA65 /* GoogleService-Info.plist in Resources */,
 				DECFA8EA1DD0C96400ABF47D /* Assets.xcassets in Resources */,
 				DECFA8E81DD0C96400ABF47D /* Main.storyboard in Resources */,
 			);
@@ -208,13 +212,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-tabbedApp/Pods-tabbedApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JJFloatingActionButton/JJFloatingActionButton.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJFloatingActionButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

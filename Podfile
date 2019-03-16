@@ -7,5 +7,6 @@ target 'tabbedApp' do
 
   # Pods for tabbedApp
     pod 'JJFloatingActionButton'
+    pod 'Firebase/Core'
 
 end
