@@ -1,0 +1,16 @@
+PODS:
+  - JJFloatingActionButton (1.0.0)
+
+DEPENDENCIES:
+  - JJFloatingActionButton
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JJFloatingActionButton
+
+SPEC CHECKSUMS:
+  JJFloatingActionButton: 3d79b8c2c6b7250264db44ef2cb654691941f107
+
+PODFILE CHECKSUM: ccc7c89f4014157639280270af4170033b5d7939
+
+COCOAPODS: 1.5.3
