@@ -12,6 +12,9 @@ import UIKit
 
 class InitialMenu: UIViewController  {
     
+    @IBAction func horarioClicked(_ sender: Any) {
+        startAPP( tab: 0 )
+    }
     
     @IBAction func mapaClicked(_ sender: Any) {
         
