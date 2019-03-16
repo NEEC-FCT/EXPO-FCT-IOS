@@ -10,6 +10,8 @@
 		5B98B03BDFF7E69B0763A14B /* Pods_tabbedApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48FC6200B65968ECC6D0C01 /* Pods_tabbedApp.framework */; };
 		9C0781E6223C97A8005EBA65 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0781E5223C97A8005EBA65 /* ScannerViewController.swift */; };
 		9C0781E8223D42D9005EBA65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C0781E7223D42D9005EBA65 /* GoogleService-Info.plist */; };
+		9C0781EA223D5154005EBA65 /* InitialMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0781E9223D5154005EBA65 /* InitialMenu.swift */; };
+		9C0781EE223D5F99005EBA65 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0781ED223D5F99005EBA65 /* CheckInternet.swift */; };
 		9C5BBF3E2220C5DE006CA71B /* Cursos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF3D2220C5DE006CA71B /* Cursos.swift */; };
 		9C5BBF402220C88F006CA71B /* Razoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF3F2220C88F006CA71B /* Razoes.swift */; };
 		9C5BBF422220C9EA006CA71B /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BBF412220C9EA006CA71B /* Horario.swift */; };
@@ -27,6 +29,8 @@
 		85D2CBAF9C55F9F5BE260F06 /* Pods-tabbedApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabbedApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tabbedApp/Pods-tabbedApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9C0781E5223C97A8005EBA65 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		9C0781E7223D42D9005EBA65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C0781E9223D5154005EBA65 /* InitialMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialMenu.swift; sourceTree = "<group>"; };
+		9C0781ED223D5F99005EBA65 /* CheckInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckInternet.swift; path = ../../../../Downloads/CheckInternet/CheckInternet.swift; sourceTree = "<group>"; };
 		9C5BBF3D2220C5DE006CA71B /* Cursos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cursos.swift; sourceTree = "<group>"; };
 		9C5BBF3F2220C88F006CA71B /* Razoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Razoes.swift; sourceTree = "<group>"; };
 		9C5BBF412220C9EA006CA71B /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
@@ -100,11 +104,13 @@
 				9C0781E7223D42D9005EBA65 /* GoogleService-Info.plist */,
 				9CFDE5B82200A146007BE4CB /* Mapa.swift */,
 				9C5BBF3D2220C5DE006CA71B /* Cursos.swift */,
+				9C0781ED223D5F99005EBA65 /* CheckInternet.swift */,
 				9C5BBF3F2220C88F006CA71B /* Razoes.swift */,
 				9C5BBF412220C9EA006CA71B /* Horario.swift */,
 				9C5BBF432220CC01006CA71B /* Info.swift */,
 				9C656E532233F0610040B41B /* tabBarController.swift */,
 				9C0781E5223C97A8005EBA65 /* ScannerViewController.swift */,
+				9C0781E9223D5154005EBA65 /* InitialMenu.swift */,
 			);
 			path = tabbedApp;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5BBF3E2220C5DE006CA71B /* Cursos.swift in Sources */,
+				9C0781EA223D5154005EBA65 /* InitialMenu.swift in Sources */,
 				9C5BBF442220CC01006CA71B /* Info.swift in Sources */,
 				9CFDE5B92200A146007BE4CB /* Mapa.swift in Sources */,
 				9C656E542233F0610040B41B /* tabBarController.swift in Sources */,
@@ -244,6 +251,7 @@
 				9C5BBF402220C88F006CA71B /* Razoes.swift in Sources */,
 				DECFA8E11DD0C96400ABF47D /* AppDelegate.swift in Sources */,
 				9C0781E6223C97A8005EBA65 /* ScannerViewController.swift in Sources */,
+				9C0781EE223D5F99005EBA65 /* CheckInternet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

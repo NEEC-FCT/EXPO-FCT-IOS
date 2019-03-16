@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="845-P6-aaB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -148,6 +148,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" id="CeW-S8-rbz" userLabel="Mapa"/>
                     <connections>
+                        <outlet property="NEECLogo" destination="Tha-Gf-qyQ" id="rqT-dt-Nve"/>
                         <outlet property="webView" destination="Bwy-U2-NdF" id="yLm-ie-kCB"/>
                     </connections>
                 </viewController>
@@ -166,12 +167,23 @@
                     <view key="view" contentMode="scaleToFill" id="KHb-gR-Ero">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="MTR-h6-MB9">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MTR-h6-MB9" firstAttribute="centerX" secondItem="KHb-gR-Ero" secondAttribute="centerX" id="DKJ-by-LTg"/>
+                            <constraint firstItem="MTR-h6-MB9" firstAttribute="centerY" secondItem="KHb-gR-Ero" secondAttribute="centerY" id="O7k-pe-AeC"/>
+                            <constraint firstItem="MTR-h6-MB9" firstAttribute="leading" secondItem="KHb-gR-Ero" secondAttribute="leadingMargin" constant="51" id="pKQ-7w-Y9q"/>
+                            <constraint firstItem="MTR-h6-MB9" firstAttribute="top" secondItem="LDr-gJ-MQg" secondAttribute="bottom" constant="249" id="qhx-ga-6YL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDp-1y-pI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1531" y="-1025"/>
+            <point key="canvasLocation" x="1498" y="-1021"/>
         </scene>
         <!--Informação-->
         <scene sceneID="wg7-f3-ORb">
@@ -207,10 +219,125 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="466.41679160419795"/>
         </scene>
+        <!--Initial Menu-->
+        <scene sceneID="6YC-sV-FSH">
+            <objects>
+                <viewController id="845-P6-aaB" customClass="InitialMenu" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1rF-BU-vcy"/>
+                        <viewControllerLayoutGuide type="bottom" id="zU8-L8-1uC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0oV-J7-bCg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phw-ou-Iej">
+                                <rect key="frame" x="39" y="367" width="91" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="K58-mZ-H52"/>
+                                    <constraint firstAttribute="width" constant="91" id="ws9-XT-Ys4"/>
+                                </constraints>
+                                <state key="normal" title="Mapa" image="cirucloMapa">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mapaClicked:" destination="845-P6-aaB" eventType="touchUpInside" id="KPb-ZY-dT8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T62-ti-w4Q">
+                                <rect key="frame" x="142" y="367" width="91" height="78"/>
+                                <state key="normal" image="circuloInfo"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="infoClicked:" destination="845-P6-aaB" eventType="touchUpInside" id="LNQ-XY-0AI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-sc-ImK">
+                                <rect key="frame" x="245" y="367" width="91" height="78"/>
+                                <state key="normal" image="circuloCamara"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cameraClicked:" destination="845-P6-aaB" eventType="touchUpInside" id="AwS-7Z-T4m"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_expo_fct" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-kr-hCn">
+                                <rect key="frame" x="32" y="123" width="311" height="204"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIl-HJ-VeD">
+                                <rect key="frame" x="92" y="481" width="91" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="fQc-Ej-EHp"/>
+                                    <constraint firstAttribute="height" constant="78" id="p1k-d0-IEC"/>
+                                </constraints>
+                                <state key="normal" image="circuloRazoes"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reasonClicked:" destination="845-P6-aaB" eventType="touchUpInside" id="J30-ZP-Xuc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdQ-tZ-V5g">
+                                <rect key="frame" x="191" y="481" width="91" height="78"/>
+                                <state key="normal" image="circuloFCT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fctClicked:" destination="845-P6-aaB" eventType="touchUpInside" id="5A8-Ub-J7r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j1k-kr-hCn" firstAttribute="centerX" secondItem="0oV-J7-bCg" secondAttribute="centerX" id="1HX-94-vR2"/>
+                            <constraint firstItem="j1k-kr-hCn" firstAttribute="leading" secondItem="0oV-J7-bCg" secondAttribute="leadingMargin" constant="16" id="1OW-v2-4qf"/>
+                            <constraint firstItem="kTu-sc-ImK" firstAttribute="leading" secondItem="T62-ti-w4Q" secondAttribute="trailing" constant="12" id="6fl-T9-t0k"/>
+                            <constraint firstItem="qIl-HJ-VeD" firstAttribute="top" secondItem="phw-ou-Iej" secondAttribute="bottom" constant="36" id="9Ts-lp-vFs"/>
+                            <constraint firstItem="qIl-HJ-VeD" firstAttribute="top" secondItem="WdQ-tZ-V5g" secondAttribute="top" id="DPX-p9-tUa"/>
+                            <constraint firstItem="zU8-L8-1uC" firstAttribute="top" secondItem="qIl-HJ-VeD" secondAttribute="bottom" constant="108" id="GvI-bP-YLg"/>
+                            <constraint firstItem="T62-ti-w4Q" firstAttribute="top" secondItem="kTu-sc-ImK" secondAttribute="top" id="Jos-nc-BxH"/>
+                            <constraint firstItem="T62-ti-w4Q" firstAttribute="leading" secondItem="phw-ou-Iej" secondAttribute="trailing" constant="12" id="LAK-Ij-dVk"/>
+                            <constraint firstItem="qIl-HJ-VeD" firstAttribute="bottom" secondItem="WdQ-tZ-V5g" secondAttribute="bottom" id="ODt-mw-DtA"/>
+                            <constraint firstItem="phw-ou-Iej" firstAttribute="top" secondItem="j1k-kr-hCn" secondAttribute="bottom" constant="40" id="P2x-Rx-YKa"/>
+                            <constraint firstItem="T62-ti-w4Q" firstAttribute="bottom" secondItem="kTu-sc-ImK" secondAttribute="bottom" id="SOF-bE-p76"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kTu-sc-ImK" secondAttribute="trailing" constant="23" id="TO8-rg-YVj"/>
+                            <constraint firstItem="phw-ou-Iej" firstAttribute="bottom" secondItem="T62-ti-w4Q" secondAttribute="bottom" id="Tme-Hz-Et1"/>
+                            <constraint firstItem="phw-ou-Iej" firstAttribute="leading" secondItem="0oV-J7-bCg" secondAttribute="leadingMargin" constant="23" id="TvM-qL-bjw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WdQ-tZ-V5g" secondAttribute="trailing" constant="77" id="V7Z-vF-G7V"/>
+                            <constraint firstItem="j1k-kr-hCn" firstAttribute="centerX" secondItem="T62-ti-w4Q" secondAttribute="centerX" id="Wpx-Nr-AQw"/>
+                            <constraint firstItem="j1k-kr-hCn" firstAttribute="top" secondItem="1rF-BU-vcy" secondAttribute="bottom" constant="103" id="bFZ-X2-azA"/>
+                            <constraint firstItem="WdQ-tZ-V5g" firstAttribute="leading" secondItem="qIl-HJ-VeD" secondAttribute="trailing" constant="8" symbolic="YES" id="iTw-YQ-xlL"/>
+                            <constraint firstItem="phw-ou-Iej" firstAttribute="top" secondItem="T62-ti-w4Q" secondAttribute="top" id="keN-Z5-6Vo"/>
+                            <constraint firstItem="qIl-HJ-VeD" firstAttribute="leading" secondItem="0oV-J7-bCg" secondAttribute="leadingMargin" constant="76" id="nox-on-De0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KvG-5Q-cAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1567.2" y="-893.70314842578716"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" customClass="tabBarController" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" customClass="tabBarController" customModule="tabbedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -239,8 +366,15 @@
         <image name="Home" width="18.75" height="18.75"/>
         <image name="NEEC" width="4522" height="1772"/>
         <image name="calendario" width="18.75" height="18.75"/>
+        <image name="camera" width="376.16326904296875" height="376.16326904296875"/>
         <image name="choice" width="18.75" height="18.75"/>
+        <image name="circuloCamara" width="256" height="256"/>
+        <image name="circuloFCT" width="256" height="256"/>
+        <image name="circuloInfo" width="256" height="256"/>
+        <image name="circuloRazoes" width="256" height="256"/>
+        <image name="cirucloMapa" width="256" height="256"/>
         <image name="diplona" width="18.75" height="18.75"/>
         <image name="info" width="18.75" height="18.75"/>
+        <image name="logo_expo_fct" width="427" height="269"/>
     </resources>
 </document>
