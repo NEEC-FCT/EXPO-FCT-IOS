@@ -14,30 +14,60 @@ import JJFloatingActionButton
 class Mapa: UIViewController {
     
     
+    @IBOutlet weak var NEECLogo: UIImageView!
     @IBOutlet weak var webView: UIWebView!
+    let actionButton = JJFloatingActionButton()
+    
+    
+    
+    func myHandler(alert: UIAlertAction){
+        if( CheckInternet.Connection() == false)
+        {
+            let controller = UIAlertController(title: "No Internet Detected", message: "This app requires an Internet connection", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: myHandler)
+         
+            
+            controller.addAction(ok)
+        
+            
+            present(controller, animated: true, completion: nil)
+        }
+        else{
+            let url = URL (string: "https://www.google.com/maps/d/viewer?mid=1LC7hMeFmnZ8cj4XGiMAEBam7WHZZIn3k&ll=38.66073135349911%2C-9.205763350000097&z=17")
+            let requestObj = URLRequest(url: url!)
+            webView.loadRequest(requestObj)
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myHandler(alert: UIAlertAction(title: "OK", style: .default, handler: myHandler))
        
         let url = URL (string: "https://www.google.com/maps/d/viewer?mid=1LC7hMeFmnZ8cj4XGiMAEBam7WHZZIn3k&ll=38.66073135349911%2C-9.205763350000097&z=17")
         let requestObj = URLRequest(url: url!)
         webView.loadRequest(requestObj)
-       // webView.delegate = self
         
-        let actionButton = JJFloatingActionButton()
+        
         
         actionButton.addItem(title: "Equipa", image: UIImage(named: "team")?.withRenderingMode(.alwaysTemplate)) { item in
-            // do something
+            
+            
+            let url = URL (string: "https://expofct.neec-fct.com/equipa/about.html")
+            let requestObj = URLRequest(url: url!)
+            self.webView.loadRequest(requestObj)
+            self.NEECLogo.isHidden = true
+            self.actionButton.isHidden = true
+            
         }
         
         actionButton.addItem(title: "Scan", image: UIImage(named: "qrcode")?.withRenderingMode(.alwaysTemplate)) { item in
             DispatchQueue.main.async {
                 
-               
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "reader")
                     self.present(newViewController, animated: true, completion: nil)
-                
                 
             }
         }

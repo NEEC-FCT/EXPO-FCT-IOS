@@ -15,8 +15,30 @@ class Cursos: UIViewController , UIWebViewDelegate {
 
     @IBOutlet weak var webview: UIWebView!
     
+    func myHandler(alert: UIAlertAction){
+        if( CheckInternet.Connection() == false)
+        {
+            let controller = UIAlertController(title: "No Internet Detected", message: "This app requires an Internet connection", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default, handler: myHandler)
+            
+            
+            controller.addAction(ok)
+            
+            
+            present(controller, animated: true, completion: nil)
+        }
+        else{
+            let url = URL (string: "https://expofct.neec-fct.com/cursos/")
+            let requestObj = URLRequest(url: url!)
+            webview.loadRequest(requestObj)
+        }
+    }
+    
     override func viewDidLoad() {
             super.viewDidLoad()
+        
+        myHandler(alert: UIAlertAction(title: "OK", style: .default, handler: myHandler))
+        
         let url = URL (string: "https://expofct.neec-fct.com/cursos/")
         let requestObj = URLRequest(url: url!)
         webview.loadRequest(requestObj)
