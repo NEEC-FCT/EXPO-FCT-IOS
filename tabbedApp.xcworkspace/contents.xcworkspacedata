@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:tabbedApp.xcodeproj">
+      location = "group:/Users/neec/Documents/GitHub/EXPO-FCT-IOS/EXPO FCT.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
