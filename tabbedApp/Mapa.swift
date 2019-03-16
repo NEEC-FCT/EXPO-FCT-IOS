@@ -14,11 +14,23 @@ import JJFloatingActionButton
 class Mapa: UIViewController {
     
     
-    @IBOutlet weak var NEECLogo: UIImageView!
+    @IBOutlet weak var NEECLogo: UIButton!
+  
     @IBOutlet weak var webView: UIWebView!
     let actionButton = JJFloatingActionButton()
     
     
+    @IBAction func NEECClicked(_ sender: Any) {
+        
+        DispatchQueue.main.async {
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "EasterEgg")
+            self.present(newViewController, animated: true, completion: nil)
+            
+        }
+        
+    }
     
     func myHandler(alert: UIAlertAction){
         if( CheckInternet.Connection() == false)
@@ -53,12 +65,12 @@ class Mapa: UIViewController {
         
         actionButton.addItem(title: "Equipa", image: UIImage(named: "team")?.withRenderingMode(.alwaysTemplate)) { item in
             
-            
             let url = URL (string: "https://expofct.neec-fct.com/equipa/about.html")
             let requestObj = URLRequest(url: url!)
             self.webView.loadRequest(requestObj)
-            self.NEECLogo.isHidden = true
             self.actionButton.isHidden = true
+            self.NEECLogo.isHidden = true
+            
             
         }
         
