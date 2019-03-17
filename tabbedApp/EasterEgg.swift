@@ -30,7 +30,7 @@ func myHandler(alert: UIAlertAction){
             present(controller, animated: true, completion: nil)
         }
         else{
-            let url = URL (string: "https://flappycreator.com/flappy.php?id=5c8d64cac3661")
+            let url = URL (string: "https://expofct.neec-fct.com/flappy/")
             let requestObj = URLRequest(url: url!)
             webView.loadRequest(requestObj)
         }
@@ -38,9 +38,8 @@ func myHandler(alert: UIAlertAction){
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("https://flappycreator.com/flappy.php?id=5c8d64cac3661")
         myHandler(alert: UIAlertAction(title: "OK", style: .default, handler: myHandler))
-        let url = URL (string: "https://flappycreator.com/flappy.php?id=5c8d64cac3661")
+        let url = URL (string: "https://expofct.neec-fct.com/flappy/")
         let requestObj = URLRequest(url: url!)
         webView.loadRequest(requestObj)
         webView.delegate = self
