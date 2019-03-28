@@ -19,6 +19,7 @@ class InitialMenu: UIViewController  {
     @IBAction func mapaClicked(_ sender: Any) {
         
         startAPP( tab: 2 )
+        
     }
     
     
@@ -43,11 +44,7 @@ class InitialMenu: UIViewController  {
     
     func startAPP( tab:Int){
         UserDefaults.standard.set( tab , forKey: "Selected")
-        DispatchQueue.main.async {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabBar")
-            self.present(newViewController, animated: true, completion: nil)
-        }
+        performSegue(withIdentifier: "goTab", sender: nil)
     }
     
     @IBAction func fctClicked(_ sender: Any) {
@@ -55,7 +52,13 @@ class InitialMenu: UIViewController  {
     }
     
     
-
+    @IBAction func nucleosClicked(_ sender: Any) {
+        startAPP( tab: 5 )
+    }
+    
+    @IBAction func teamCliked(_ sender: Any) {
+        startAPP( tab: 6 )
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
        

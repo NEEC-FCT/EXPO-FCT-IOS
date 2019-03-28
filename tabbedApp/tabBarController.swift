@@ -15,8 +15,13 @@ class tabBarController: UITabBarController {
     var freshLaunch = true
     override func viewWillAppear(_ animated: Bool) {
         if freshLaunch == true {
-            let tab = UserDefaults.standard.integer(forKey: "Selected")
+            var tab = UserDefaults.standard.integer(forKey: "Selected")
             freshLaunch = false
+            
+            if( tab == 5 || tab == 6 ){
+                   tab = 2
+            }
+            
             self.selectedIndex = tab // 5th tab
         }
     }
