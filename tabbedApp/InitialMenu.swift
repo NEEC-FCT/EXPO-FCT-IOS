@@ -61,7 +61,8 @@ class InitialMenu: UIViewController  {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+     
         
         
         
