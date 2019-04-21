@@ -380,7 +380,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4al-bL-vbX">
-                                        <rect key="frame" x="269" y="22" width="70" height="70"/>
+                                        <rect key="frame" x="269" y="19" width="70" height="73"/>
                                         <state key="normal" image="nucleos"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
@@ -448,7 +448,7 @@
                                     <constraint firstItem="WdQ-tZ-V5g" firstAttribute="leading" secondItem="aLe-Ko-5Af" secondAttribute="leading" id="Dw9-Tg-78v"/>
                                     <constraint firstItem="WdQ-tZ-V5g" firstAttribute="top" secondItem="kwu-Wd-z11" secondAttribute="top" id="GDM-Bn-6A0"/>
                                     <constraint firstItem="phw-ou-Iej" firstAttribute="top" secondItem="kIw-h7-hOI" secondAttribute="top" constant="22" id="HWx-w8-VeV"/>
-                                    <constraint firstItem="T62-ti-w4Q" firstAttribute="top" secondItem="4al-bL-vbX" secondAttribute="top" id="HyG-P7-lQ3"/>
+                                    <constraint firstItem="T62-ti-w4Q" firstAttribute="top" secondItem="4al-bL-vbX" secondAttribute="top" constant="3" id="HyG-P7-lQ3"/>
                                     <constraint firstItem="qIl-HJ-VeD" firstAttribute="leading" secondItem="4xi-FA-1m4" secondAttribute="leading" id="IGY-x9-KgF"/>
                                     <constraint firstAttribute="bottom" secondItem="4xi-FA-1m4" secondAttribute="bottom" constant="19" id="IL4-Cx-8Yg"/>
                                     <constraint firstItem="kTu-sc-ImK" firstAttribute="leading" secondItem="T62-ti-w4Q" secondAttribute="trailing" constant="8" symbolic="YES" id="IxV-te-Pty"/>

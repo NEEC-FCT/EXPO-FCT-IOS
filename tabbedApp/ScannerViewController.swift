@@ -97,6 +97,20 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                         previewLayer.videoGravity = .resizeAspectFill
                         self.view.layer.addSublayer(previewLayer)
                         
+                        imageView.frame = CGRect(x: 10, y: 35, width: 50, height: 50)
+                        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+                        imageView.isUserInteractionEnabled = true
+                        imageView.addGestureRecognizer(tapGestureRecognizer)
+                        view.addSubview(imageView)
+                        
+                        
+                        //mira
+                        let mainImage = UIImage(named:"aim")
+                        let mainImageView = UIImageView(image:mainImage)
+                        mainImageView.center = self.view.center
+                        mainImageView.contentMode = .scaleAspectFit
+                        self.view.addSubview(mainImageView)
+                        
                       
                         self.session.startRunning()
                     }

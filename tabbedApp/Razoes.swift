@@ -19,7 +19,7 @@ class Razoes: UIViewController {
     func myHandler(alert: UIAlertAction){
         if( CheckInternet.Connection() == false)
         {
-            let controller = UIAlertController(title: "No Internet Detected", message: "This app requires an Internet connection", preferredStyle: .alert)
+            let controller = UIAlertController(title: "Sem internet" , message: "Esta aplicação necessita de internet", preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default, handler: myHandler)
             
             
